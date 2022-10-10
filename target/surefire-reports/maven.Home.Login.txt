@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: maven.Home.Login
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.314 s <<< FAILURE! - in maven.Home.Login
+maven.Home.Login.HomePageNavigation  Time elapsed: 0.232 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Cannot inject @Test annotated Method [HomePageNavigation] with [class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+

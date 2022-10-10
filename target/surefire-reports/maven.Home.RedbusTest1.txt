@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: maven.Home.RedbusTest1
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.337 s <<< FAILURE! - in maven.Home.RedbusTest1
+maven.Home.RedbusTest1.drop  Time elapsed: 0.014 s  <<< FAILURE!
+java.lang.NullPointerException
+	at maven.Home.RedbusTest1.drop(RedbusTest1.java:23)
+
