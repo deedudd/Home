@@ -7,6 +7,6 @@ public class ParentClass {
 	}
 	public static void method2() {
 		System.out.println("parent method2shg");
-		System.out.println("its me");
+		System.out.println("its deepika");
 	}
 }
