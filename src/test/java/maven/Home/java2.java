@@ -55,6 +55,7 @@ public class java2 {
 			}
 			if (cnt > 0 && arr[i] != " ") {
 				System.out.println(arr[i]);
+				System.out.println("for pull request checking");
 			}
 		}
 	}
