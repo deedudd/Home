@@ -8,6 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
@@ -21,6 +22,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Properties;
 import java.util.Random;
 import java.util.Set;
 
@@ -32,12 +34,14 @@ import pageObject.POGooglPage;
 public class java2 {
 	@Test
 	public void method1() throws IOException {
-	String[] arr = {"a","d"};
-	int temp;
-	List<String> lst = Arrays.asList(arr);
-	System.out.println(lst);
-
-	System.out.println(lst);
+		String path = "C:\\Users\\deepi\\eclipse-workspace\\Home\\src\\main\\java\\resources\\data.properties";
+		FileInputStream fis = new FileInputStream(path);
+		Properties prop = new Properties();
+		prop.load(fis);
+		System.out.println(prop.getProperty("browser"));
+		prop.setProperty("browser2", "internet explorer");
+		FileOutputStream fos = new FileOutputStream(path);
+		prop.store(fos, null);
 	}
 
 	@Test
@@ -204,14 +208,14 @@ public class java2 {
 
 	@Test
 	public void dupli() {
-		char[] c = {'a','b'};
-		String[] s1 = {"wrfr","fwer"};
+		char[] c = { 'a', 'b' };
+		String[] s1 = { "wrfr", "fwer" };
 		char[] car = new char[10];
 		String[] sar = new String[10];
-		
+
 		List<String> lst = new ArrayList<>();
 		ArrayList<String> lst2 = new ArrayList<>();
-		
+
 		lst.add("deepika");
 		lst.add("kishore");
 		lst.add(1, "aniket");
@@ -220,55 +224,53 @@ public class java2 {
 		lst2.add("kishore");
 		lst2.add(1, "aniket");
 		System.out.println(lst2.get(1));
-		
 
-		
 	}
+
 	@Test
 	public void matrix() {
-		
-		for(int i=0;i<5;i++) {
-			for(int k=5-i;k<5;k++) {
+
+		for (int i = 0; i < 5; i++) {
+			for (int k = 5 - i; k < 5; k++) {
 				System.out.print(" ");
 			}
-			for(int j=0;j<5-i;j++) {
+			for (int j = 0; j < 5 - i; j++) {
 				System.out.print("* ");
 			}
 			System.out.println();
 		}
 	}
+
 	@Test
 	public void dInt() {
 
-		int[][] arr = {{2,5},{4,7}};
+		int[][] arr = { { 2, 5 }, { 4, 7 } };
 		int[][] arr1 = new int[2][3];
-		int row=0;
-		int big=arr[0][0];
+		int row = 0;
+		int big = arr[0][0];
 
-		for(int i=0;i<arr.length;i++) {
-			for(int j=0;j<arr.length;j++) {
-				if(big<arr[i][j]) {
-					big=arr[i][j];
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr.length; j++) {
+				if (big < arr[i][j]) {
+					big = arr[i][j];
 					row = i;
 				}
 			}
-			
-			
+
 		}
 		int small = arr[row][0];
-		for(int k=0;k<arr.length;k++) {
-			if(small>arr[row][k]) {
-				small=arr[row][k];
+		for (int k = 0; k < arr.length; k++) {
+			if (small > arr[row][k]) {
+				small = arr[row][k];
 			}
 		}
 		System.out.println(big);
 		System.out.println(small);
-		
-		
-		
+
 	}
+
 	@Test
 	public void prime() {
-		
+
 	}
 }
