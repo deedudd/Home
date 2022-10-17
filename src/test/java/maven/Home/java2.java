@@ -32,6 +32,7 @@ import pageObject.POGooglPage;
 public class java2 {
 	@Test
 	public void method1() throws IOException {
+		System.out.println("in experiment");
 		String path = "C:\\Users\\deepi\\OneDrive\\Desktop\\seleniumPractice.xlsx";
 		XSSFWorkbook wb = new XSSFWorkbook(path);
 		XSSFSheet sheet = wb.getSheetAt(0);
