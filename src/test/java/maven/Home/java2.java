@@ -34,6 +34,7 @@ import pageObject.POGooglPage;
 public class java2 {
 	@Test
 	public void method1() throws IOException {
+		System.out.println("hello");
 		String path = "C:\\Users\\deepi\\eclipse-workspace\\Home\\src\\main\\java\\resources\\data.properties";
 		FileInputStream fis = new FileInputStream(path);
 		Properties prop = new Properties();
