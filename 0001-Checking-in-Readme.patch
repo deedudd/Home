@@ -1,0 +1,21 @@
+From aad948e7127eee6885f1ade44af61ca6937d87f8 Mon Sep 17 00:00:00 2001
+From: Deepika <deepikamaddula85@gmail.com>
+Date: Mon, 10 Oct 2022 09:49:59 +0530
+Subject: [PATCH 1/2] Checking in Readme
+
+---
+ Readme.doc | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Readme.doc
+
+diff --git a/Readme.doc b/Readme.doc
+new file mode 100644
+index 0000000..8924499
+--- /dev/null
++++ b/Readme.doc
+@@ -0,0 +1 @@
++This is Readme for my feature
+\ No newline at end of file
+-- 
+2.35.1.windows.2
+

@@ -1,0 +1,24 @@
+From 22f8e12757b891e4e76aa5ddcb13654ce1deeca7 Mon Sep 17 00:00:00 2001
+From: Deepika <deepikamaddula85@gmail.com>
+Date: Mon, 10 Oct 2022 12:06:18 +0530
+Subject: [PATCH] changing System in caps in master
+
+---
+ src/test/java/maven/Home/ChildClass.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/test/java/maven/Home/ChildClass.java b/src/test/java/maven/Home/ChildClass.java
+index 598ffde..4908328 100644
+--- a/src/test/java/maven/Home/ChildClass.java
++++ b/src/test/java/maven/Home/ChildClass.java
+@@ -6,6 +6,6 @@ public class ChildClass {
+ @Test
+ public void test1() {
+ 	System.out.println("changing in the child class edited");
+-	system.out.println("added in github directly");
++	System.out.println("added in github directly");
+ }
+ }
+-- 
+2.35.1.windows.2
+

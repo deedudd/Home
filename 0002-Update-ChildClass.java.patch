@@ -1,0 +1,26 @@
+From a03c4610f24ad2cb46cfd4d413ab2fe1cd4cf0e3 Mon Sep 17 00:00:00 2001
+From: deedudd <deepikamaddula85@gmail.com>
+Date: Mon, 10 Oct 2022 11:54:31 +0530
+Subject: [PATCH 2/2] Update ChildClass.java
+
+---
+ src/test/java/maven/Home/ChildClass.java | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/test/java/maven/Home/ChildClass.java b/src/test/java/maven/Home/ChildClass.java
+index a9832a1..9b7084a 100644
+--- a/src/test/java/maven/Home/ChildClass.java
++++ b/src/test/java/maven/Home/ChildClass.java
+@@ -5,6 +5,6 @@ import org.testng.annotations.Test;
+ public class ChildClass {
+ @Test
+ public void test1() {
+-	
++	System.out.println("edit in childclass in experimental branch");
++}
+ }
+-}
+\ No newline at end of file
+-- 
+2.35.1.windows.2
+
