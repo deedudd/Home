@@ -187,7 +187,7 @@ public class java2 {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\deepi\\Downloads\\chromedriver_win32 (9)\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.nhsjobs.com/");
-		System.out.println("launched page in experiment2");
+		System.out.println("launched page in experiment2 againa");
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src, new File("C:\\Users\\deepi\\eclipse-workspace\\Home\\reports\\nhsJobs.png"));
 		
